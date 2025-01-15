@@ -1,7 +1,3 @@
-# Mindfull-Expenses
-Developed a web app promoting mindful spending by categorizing and tracking expenses. • Implemented data analysis and visualization features using
-Here’s a README.md template for your Mindful Expense project:
-
 # Mindful Expense
 
 Mindful Expense is a user-friendly web application designed to help individuals track, analyze, and manage their expenses efficiently. It allows users to categorize expenses, view detailed reports, and develop better financial habits.
