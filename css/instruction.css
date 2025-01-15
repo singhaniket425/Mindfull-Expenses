@@ -1,0 +1,164 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333; /* Ensures general text is dark enough for readability */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 78px auto 0 auto; /* Added top margin of 78px */
+    padding: 20px 0;
+}
+
+/* Page Title */
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Dark color for better visibility */
+}
+
+.intro-text {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555; /* Ensure sufficient contrast */
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Tagline */
+.tagline {
+    text-align: center;
+    font-style: italic;
+    color: #16a085; /* A vibrant color for emphasis */
+    margin-bottom: 40px;
+    font-size: 1.3rem;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #34495e; /* Dark enough for readability */
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+/* Grid Layout for Categories */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card .icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #2980b9; /* Ensures icon is visible and stands out */
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #2c3e50; /* Dark color for headings */
+}
+
+.card p {
+    font-size: 1rem;
+    color: #7f8c8d; /* Slightly lighter for descriptions, but ensure readability */
+}
+
+/* Buttons */
+button {
+    display: inline-block;
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #219150;
+    transform: scale(1.05);
+}
+
+/* Lists */
+.benefits-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.benefits-section li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #555; /* Ensures list items are readable */
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    section h2 {
+        font-size: 1.8rem;
+    }
+
+    .card .icon {
+        font-size: 2rem;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 15px 0;
+    }
+}
+
+/* Remove Dark Mode Styles */
+/* All styles related to dark mode have been removed to focus solely on the light theme */
