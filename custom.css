@@ -1,0 +1,242 @@
+/* custom.css */
+
+/* Root Variables for Consistent Theming */
+:root {
+    --primary-color: #4A90E2;
+    --secondary-color: #50E3C2;
+    --accent-color: #F5A623;
+    --background-color: #f4f6f9;
+    --text-color: #333333;
+    --table-header-color: #4A90E2;
+    --table-row-hover: #f1f1f1;
+    --button-primary: #4A90E2;
+    --button-secondary: #7B8A8B;
+    --button-danger: #e74c3c;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-radius: 10px;
+}
+
+/* Global Styles */
+body {
+    background-color: var(--background-color);
+    font-family: var(--font-family);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+/* Container with Top Margin and Enhanced Curves */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 78px auto 40px auto; /* Top margin of 78px */
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Button Styles */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-primary {
+    background-color: var(--button-primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background-color: #3a7bd5;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: var(--button-secondary);
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6a6b;
+    transform: translateY(-2px);
+}
+
+.btn-danger {
+    background-color: var(--button-danger);
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+}
+
+/* Link Styles */
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Table Styles */
+.table-responsive {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden; /* To apply border-radius to table */
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border: 1px solid #dee2e6;
+}
+
+th {
+    background-color: var(--table-header-color);
+    color: white;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+    background-color: var(--table-row-hover);
+}
+
+tfoot th {
+    background-color: #e9ecef;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 78px auto 20px auto;
+        padding: 20px;
+    }
+
+    th, td {
+        padding: 10px 15px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Additional Styles for Specific Pages */
+
+/* Expense Reports Page */
+.expense-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Increased gap for better spacing */
+    padding: 25px;
+    background-color: var(--background-color);
+    border-radius: 15px; /* Increased border-radius */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    margin-bottom: 40px; /* Increased bottom margin */
+}
+
+.expense-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.expense-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--text-color);
+}
+
+.expense-form input[type="date"],
+.expense-form select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Increased border-radius */
+    min-width: 180px; /* Increased minimum width */
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-size: 1em;
+}
+
+.expense-form input[type="date"]:focus,
+.expense-form select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Added box-shadow on focus */
+    outline: none;
+}
+
+/* Chart Container */
+.chart-container {
+    width: 100%;
+    max-width: 700px; /* Increased max-width */
+    margin: 50px auto; /* Adjusted margin for better spacing */
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 20px; /* Increased border-radius */
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+}
+
+/* Alerts */
+.alert {
+    margin-top: 20px;
+    border-radius: var(--border-radius);
+    padding: 15px;
+    font-size: 1em;
+}
+
+/* Modal Styles (if using modals) */
+.modal-content {
+    border-radius: 15px;
+}
+
+/* Additional utility classes */
+.mb-3 {
+    margin-bottom: 1rem !important;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem !important;
+}
+
+.mt-78 {
+    margin-top: 78px !important;
+}
+
